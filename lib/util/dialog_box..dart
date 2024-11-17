@@ -28,7 +28,7 @@ class DialogBox extends StatelessWidget {
             controller: controller,
             decoration: InputDecoration(
               border: OutlineInputBorder(),
-              hintText: "Add a new Taxt",
+              hintText: "Add a new Text",
               ),
           ),
             //save

@@ -32,6 +32,7 @@ void checkBoxChanged(bool? value, int index){
 void saveNewTask() {
   setState(() {
     toDoList.add((_controller.text,false));
+    _controller.clear();
   });
   Navigator.of(context).pop();
 }
@@ -49,6 +50,14 @@ void saveNewTask() {
   }
   // TextEditingController myController = TextEditingController();
   
+  //delete Task
+  void deleteTask(int index){
+    setState(() {
+      toDoList.removeAt(index);
+    });
+  }
+
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -68,6 +77,7 @@ void saveNewTask() {
             taskName: toDoList[index][0],
             taskCompleted: toDoList[index][1],
             onChanged: (value) => checkBoxChanged(value, index),
+            deleteFunction: (context) => deleteTask,
           );
         },
       ),
