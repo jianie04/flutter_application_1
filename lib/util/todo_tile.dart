@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_slidable/flutter_slidable.dart';
 
+// ignore: must_be_immutable
 class ToDoTile extends StatelessWidget {
   final String taskName;
   final bool taskCompleted;
@@ -36,7 +37,7 @@ class ToDoTile extends StatelessWidget {
         child: Container(
           padding: EdgeInsets.all(24),
         decoration: BoxDecoration(
-          color: Colors.yellow,
+          color: const Color.fromARGB(144, 250, 249, 249),
           borderRadius: BorderRadius.circular(12),
         ),
         child: Row(

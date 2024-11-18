@@ -40,7 +40,7 @@ void saveNewTask() {
     showDialog(
       context: context, 
       builder: (context) {
-        return DialogBox(
+        return dialogBox(
            controller: _controller,
            onSave: saveNewTask,
            onCancel: () => Navigator.of(context).pop(),
@@ -61,7 +61,7 @@ void saveNewTask() {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.yellow[200],
+      backgroundColor: Colors.blueGrey,
       appBar: AppBar(
         title: Text ("TO DO"),
         elevation: 0,

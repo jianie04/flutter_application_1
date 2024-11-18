@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'pages/home_page.dart';
+// ignore: unused_import
 import 'util/dialog_box..dart';
-import 'util/my_button.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false, //for debugbanner
       home: HomePage(),
-      theme: ThemeData(primarySwatch: Colors.yellow),
+      theme: ThemeData(primarySwatch: Colors.grey),
     );
   }
 }
